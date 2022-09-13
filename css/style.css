@@ -818,6 +818,7 @@ button {
   top: 50%;
   padding: 40px;
   width: 528px;
+  height: 581px;
 
   background-color: var(--primary-page-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -841,7 +842,7 @@ button {
   width: 30px;
   height: 30px;
   padding: 0;
-
+  
   background-color: var(--primary-page-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -849,6 +850,12 @@ button {
 
 .close-icon {
   fill: var(--accent-second-color);
+  transition: fill var(--transition-time-end-timing);
+}
+
+.close-btn:hover .close-icon,
+.close-btn:focus .close-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form-title {
@@ -881,7 +888,8 @@ button {
   transition: border var(--transition-time-end-timing);
 }
 
-.modal-form-input:focus {
+.modal-form-input:focus,
+.modal-form-input:hover {
   border: 1px solid var(--accent-color);
 }
 
@@ -901,7 +909,8 @@ button {
   transition: fill var(--transition-time-end-timing);
 }
 
-.modal-form-input:focus+.form-icon {
+.modal-form-input:focus+.form-icon,
+.modal-form-input:hover+.form-icon {
   fill: var(--accent-color);
 }
 
@@ -934,7 +943,8 @@ button {
   transition: border var(--transition-time-end-timing);
 }
 
-.comment-place:focus {
+.comment-place:focus,
+.comment-place:hover {
   border: 1px solid var(--accent-color);
 }
 
